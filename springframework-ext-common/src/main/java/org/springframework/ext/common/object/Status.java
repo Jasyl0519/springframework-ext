@@ -41,4 +41,26 @@ public interface Status {
      * @return 状态描述
      */
     public String getMessage(Object... format);
+
+    //-----------------------------低版本方法兼容
+    /**
+     * 错误码
+     *
+     * @return 错误码
+     */
+    public String getCode();
+
+    /**
+     * 状态描述
+     *
+     * @return 状态描述
+     */
+    public String getMsg();
+
+    /**
+     * 状态描述
+     *
+     * @return 状态描述
+     */
+    public String getMsg(Object... format);
 }
