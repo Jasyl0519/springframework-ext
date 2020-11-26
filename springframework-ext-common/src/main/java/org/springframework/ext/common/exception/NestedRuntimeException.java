@@ -82,6 +82,21 @@ public class NestedRuntimeException extends RuntimeException {
             public String getMessage(Object... format) {
                 return finalMessage;
             }
+
+            @Override
+            public String getCode() {
+                return finalErrorCode;
+            }
+
+            @Override
+            public String getMsg() {
+                return finalMessage;
+            }
+
+            @Override
+            public String getMsg(Object... format) {
+                return finalMessage;
+            }
         };
     }
 
